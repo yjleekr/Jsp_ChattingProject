@@ -1,0 +1,271 @@
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+}
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+#headtext{
+	font-family: 'yg-jalnan';
+	font-size: 38px;
+}
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.bottom {
+	background-color: #333333;
+	height: 200px;
+}
+.bottomitems{
+	padding-top: 50px;
+}
+.bottom a{
+	color : white;
+}
+.bottom p{
+	font-size: 0.75rem;
+}
+.loginpage a{
+	color : #3f7d1b;
+}
+.sidead {
+  z-index: 1000;
+  position: fixed;
+  top: 200px;
+  left: 20px;
+  margin-left: 0;
+  width: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.sidead.toggled {
+  margin-left: -250px;
+}
+.from{
+		font-size : 1.0rem;
+		background:	#66D965;
+		border-radius: 10px 10px 0px 10px;
+		padding: 10px;
+		color: white;
+	}
+	.msgtime{
+		font-size: 0.8rem;
+	}
+	.to{
+		font-size : 1.0rem;
+		background:	#F5B638;
+		border-radius: 10px 10px 10px 0px;
+		padding: 10px;
+		color: white;
+	}
+#msgbox{
+	height : 550px;
+	margin-bottom: 10px;
+	overflow: auto;	/* 박스 크기보다 내용물이 넘쳤을때 스크롤 만들기 */
+}
+#msgbox2{
+	height : 590px;
+	margin-bottom: 10px;
+	overflow: auto;	/* 박스 크기보다 내용물이 넘쳤을때 스크롤 만들기 */
+	
+}
+#chattingmain{
+	background-color: #EBF7ED;
+	width: 700px;
+	border-radius: 18px;
+	height: 680px;
+	margin-top: 33px;
+}
+.roomlist{
+	overflow: auto;
+	height: 502px;
+	border: solid 1px #E5E5E5; 
+	
+}
+.roomlist::-webkit-scrollbar{width: 16px;}
+.roomlist::-webkit-scrollbar-track {background-color:#EBF7ED;}
+.roomlist::-webkit-scrollbar-thumb {background-color:#66D965; border-radius: 15px;}
+.roomlist::-webkit-scrollbar-thumb:hover {background:#EBF7ED;}
+.roomlist::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+width:16px;height:16px;background:#66D965;} 
+.background2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  
+  /* 숨기기 */
+  z-index: -1;
+  opacity: 0;
+}
+
+.show2 {
+  opacity: 1;
+  z-index: 1000;
+  transition: all .5s;
+}
+
+.window2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.popup2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+  
+  /* 임시 지정 */
+  width: 400px;
+  height: 150px;
+  
+  /* 초기에 약간 아래에 배치 */
+  transform: translate(-50%, -40%);
+}
+
+.show2 .popup2 {
+  transform: translate(-50%, -50%);
+  transition: all .5s;
+}
+#btn1{
+	font-size : 16px;
+	color : white;
+	background-color: #66D965;
+	border:none;
+	border-radius: 0px 8px 8px 0px;
+	width: 60px; height: 52px; 
+}
+.intput1{
+	font-size : 16px;
+	color : black;
+	background-color: #F2F3F8;
+	border:none;
+	border-radius: 8px 0px 0px 8px;
+	width :240px; height: 52px;
+}
+.intput1::placeholder {
+  color: #ABABAB;
+  padding-left: 20px;
+}
+#serch{
+	padding: 32px 0px;
+}
+
+#td1{
+	height: 84px;
+}
+#td_head{
+	height: 84px;
+	background-color: #EBF7ED;
+}
+.td1{
+	padding-top:16px;
+	font-size: 18px;
+}
+.td2{
+	padding-top:16px;
+	font-size: 18px;
+	color: #222222;
+}
+.td3{
+	padding-top:16px;
+	font-size: 18px;
+	color: #ABABAB;
+}
+#btn_enter1{
+	border: none;
+	height: 52px;
+	width: 100px;
+	background-color: #F5B638;
+	border-radius: 8px;
+	color: white;
+	margin-top: 46px; 
+	margin-right: 48px;
+}
+#btn_enter2{
+	border: none;
+	height: 52px;
+	width: 100px;
+	background-color: #66D965;
+	border-radius: 8px;
+	color: white;
+	margin-top: 46px; 
+	margin-left: 48px;
+}
+#room_title{
+	border: solid 1px #E5E5E5; 
+	border-radius: 28px 0px 0px 0px;
+}
+#chattingserch{
+	margin: 10px 36px 0px 36px;
+	border-radius: 28px;
+}
+#msginput{
+	height: 50px;
+	border-radius: 8px 0px 0px 8px;
+	color: #ABABAB;
+}
+#btnmsginput{
+	height: 50px;
+	border-radius: 0px 8px 8px 0px;
+	background-color: #66D965;
+	color: white;
+	font-size: 16px;
+}
+#btnemo{
+	height: 50px;
+	background-color: #66D965;
+	color: white;
+	font-size: 16px;
+}
+#nowroom{
+	background-color: #66D965;
+	border-radius: 18px 18px 0px 0px;
+ 	color: white;
+ 	font-size : 25 px;
+ 	padding: 15px 0px 15px 0px;
+}
+#nowroomname{
+	float: left;
+	padding-left: 20px;
+}
+
+.openroom{
+	border-radius: 10px;
+	background-color: white;
+	padding: 3px 5px 3px 5px;
+}
+.profileimg{
+	margin : 10px 5px 10px 35px;
+	width : 60px;
+	height: 60px;
+	border-radius: 70%;
+	overflow: hidden;
+}
